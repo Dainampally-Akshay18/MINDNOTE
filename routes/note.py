@@ -40,7 +40,6 @@ def add_note(
     inserted_note = conn.MINDNOTE.NOTE.insert_one(note_data)
     print("Inserted Note:", inserted_note)
     
-    # FIXED: Add query parameter to trigger success toast
     return RedirectResponse(url="/?added=true", status_code=303)
 
 @note.post("/delete/{note_id}")
@@ -48,7 +47,6 @@ def delete_note(note_id: str):
     try:
         if not ObjectId.is_valid(note_id):
             print(f"Invalid ObjectId format: {note_id}")
-            # FIXED: Add error parameter for invalid ID
             return RedirectResponse(url="/?error=invalid_id", status_code=303)
             
         object_id = ObjectId(note_id)
@@ -56,16 +54,13 @@ def delete_note(note_id: str):
         
         if result.deleted_count == 1:
             print(f"Successfully deleted note with ID: {note_id}")
-            # FIXED: Add success parameter for successful deletion
             return RedirectResponse(url="/?deleted=true", status_code=303)
         else:
             print(f"Note with ID: {note_id} not found")
-            # FIXED: Add error parameter for note not found
             return RedirectResponse(url="/?error=not_found", status_code=303)
             
     except Exception as e:
         print(f"Error deleting note: {e}")
-        # FIXED: Add error parameter for general errors
         return RedirectResponse(url="/?error=delete_failed", status_code=303)
 
 @note.get("/about-us")
