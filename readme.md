@@ -3,16 +3,17 @@
 *Your Mind, Organized - A Professional Note Management System*
 
  An Enterprise-level note management application that transforms how you capture, organize, and access your thoughts. Built with modern web technologies and featuring a beautiful Ocean-to-Sunset UI theme, MindNotes combines powerful functionality with an intuitive, visually captivating interface.
-
-![Screenshot 1](output/1.png)
-![Screenshot 2](output/2.png)
-![Screenshot 3](output/3.png)
-![Screenshot 4](output/4.png)
-![Screenshot 5](output/5.png)
-![Screenshot 6](output/6.png)
-![Screenshot 7](output/7.png)
-![Screenshot 8](output/8.png)
-![Screenshot 9](output/9.png)
+<p align="center">
+  <img src="./output/1.png" alt="Screenshot 1" width="400"/>
+  <img src="./output/2.png" alt="Screenshot 1" width="400"/>
+  <img src="./output/3.png" alt="Screenshot 1" width="400"/>
+  <img src="./output/4.png" alt="Screenshot 1" width="400"/>
+  <img src="./output/5.png" alt="Screenshot 1" width="400"/>
+  <img src="./output/6.png" alt="Screenshot 1" width="400"/>
+  <img src="./output/7.png" alt="Screenshot 1" width="400"/>
+  <img src="./output/8.png" alt="Screenshot 1" width="400"/>
+  <img src="./output/9.png" alt="Screenshot 1" width="400"/>
+</p>
 
 
 ### ✨ Key Features
